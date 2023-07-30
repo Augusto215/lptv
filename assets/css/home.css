@@ -1,0 +1,211 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+
+body
+{
+    background-color: #000 !important;
+}
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index1
+{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.7)), url('https://speedtvplayoficial.xyz/wp-content/uploads/2022/01/familia1.jpg');
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.txt-index1
+{
+    display: flex;
+    justify-content: center;
+    text-shadow: 3px 3px 5px #000;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+   
+ 
+}
+
+ul
+{
+    padding: 0 !important;
+}
+
+.teste
+{
+    font-family: "Poppins", Sans-serif;
+    font-weight: 500;
+    fill: #000000;
+    color: #000000 !important;
+    background-color: #00CB12;
+    outline: none;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 700;
+    z-index: 19;
+}
+
+
+
+.index1 h1
+
+{
+   
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.index2
+{
+    padding:10rem 0 0;
+    text-align: center;
+    width: 90%;
+}
+
+.index2 h1
+{
+    color: #000000;
+
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
+
+.index1 h3
+{
+    margin-bottom: 4rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.index2 h3
+
+{
+    font-size: 2rem;
+  
+    font-weight: 600;
+}
+
+.logo
+{
+    height: 2.7rem;
+}
+.nav1
+{
+    background: linear-gradient(to right, #110b61, #10dbe2) ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 3.5rem;
+    font-size: .9rem;
+   
+
+}
+
+.nav1 ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    
+}
+.nav1 ul li 
+{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+
+}
+.index2
+{
+    margin: auto;
+}
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:.5rem;
+    padding: 3rem 0 5rem;
+}
+
+.container-item
+{
+    background-color: #4d0404;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 30rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #1f1e1e;
+}
+
+.nav1 ul li:hover
+{
+    background-color: #111149;
+}
+
+@media (max-width:60rem)
+
+{
+
+
+ h1
+{
+    font-size: 2rem !important;
+}
+
+
+ h3
+{
+    font-size: 1.5rem !important;
+}
+
+
+
+    .nav1 ul
+{display: none !important;}
+}
