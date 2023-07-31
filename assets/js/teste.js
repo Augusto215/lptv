@@ -1,4 +1,8 @@
 
+document.querySelectorAll('.contrate-a').forEach(function(el) {
+    el.setAttribute('href', 'https://api.whatsapp.com/send?phone=5519983277951&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20IPTV!');
+});
+
     
 
 // Selecionando todos os botões
