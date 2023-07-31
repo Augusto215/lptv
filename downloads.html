@@ -206,6 +206,50 @@
 
     </div>
 
+
+    <style>
+
+.nome-app
+{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    text-align: center;
+    justify-content: right;
+    align-items: flex-end;
+}   
+
+.nome-app h2
+
+{
+   max-width: 55%;
+   word-break: break-word;
+   text-align: right;
+}
+
+
+@media (max-width:63rem)
+
+{
+    .nome-app
+{
+  
+    justify-content:center !important;
+    align-items: center !important;
+}   
+
+.nome-app h2
+
+{
+   max-width: auto !important;
+  
+   text-align: center !important;
+}
+
+}
+
+
+    </style>
     <script>
         document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
           event.preventDefault();
