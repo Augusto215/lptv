@@ -1,0 +1,193 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="/assets/image/logo_512.ico" sizes="64x64" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
+
+    <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <header>
+            <div class="p-3" style="display: flex; justify-content: center; align-items: center;"><img class="logo" src="/assets/image/logo_site_2.png"></div>
+            <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">INÍCIO <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="teste.html">TESTE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tutoriais.html">TUTORIAIS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DOWNLOADS</a>
+                      </li>
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SUPORTE
+                      </a>
+                      <div class="dropdown-menu bg-wnite" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTATO</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+          </header>
+    <div style="margin:auto;" class="index5 container">
+        <h1 style="text-align: center;">
+                SIMPLES ASSIM
+    CLIQUE NO BOTÃO ABAIXO E SOLICITE SEU TESTE GRÁTIS
+        </h1>
+
+        <button style="margin-top:3rem;" class="teste">TESTAR AGORA</button>
+    </div>
+       
+    <div class="index6">
+        <body>
+            <!-- Botão flutuante -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal" 
+            style="position: fixed; bottom: 20px; right: 20px; z-index: 99; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp; Olá, como posso ajudar?</button>
+          
+            <!-- Modal -->
+            <div class="modal" id="formModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                
+                  <!-- Cabeçalho do Modal -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Enviar mensagem para o WhatsApp</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Corpo do Modal -->
+                  <div class="modal-body">
+                    <form id="whatsapp-form">
+                      <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <input type="text" class="form-control" id="message" placeholder="Sua mensagem">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar para o WhatsApp</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </body>
+          </html>
+          
+
+    </div>
+
+    <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          var name = document.getElementById('name').value;
+          var message = document.getElementById('message').value;
+          
+          var whatsappUrl = "https://wa.me/1234567890?text=" + encodeURIComponent(name + ': ' + message);
+          
+          // Feche o modal e abra o WhatsApp depois de um pequeno atraso
+          $('#formModal').modal('hide');
+          setTimeout(function() { window.location.href = whatsappUrl; }, 500);
+        });
+      </script>
+      
+    <div class="index7">
+
+       © Todos os Direitos Reservados
+    </div>
+<style>
+
+a, button, img, span {
+-webkit-tap-highlight-color: transparent;
+}
+button:focus, a:focus {
+outline: none;
+}
+
+button:active, a:active {
+outline: none;
+}
+.index6 
+{
+
+
+height: 15rem;
+background: linear-gradient(to right, #00000096,#00000080), url('/assets/image/john-wick-chapter-2-2017-artwork-poster-ap.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top;
+padding: 3rem 0;
+text-align: center !important;
+
+}
+
+
+
+.index7
+
+{
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 10rem;
+}
+
+.teste, .contrate
+{
+/* Adicione essa propriedade para garantir que o botão comece de uma posição abaixo do seu local original */
+
+transition: .6s ease;
+}
+
+
+.teste:hover, .contrate:hover
+{
+
+animation: btn-animation .6s forwards;
+transition: .6s ease;
+animation-delay: 10ms;
+}
+
+@keyframes btn-animation {
+0% {
+    transform: translateY(10px); /* Inicialmente, o botão estará 10px abaixo do local original */
+}
+100% {
+    transform: translateY(-10px); /* Finalmente, o botão voltará para o local original */
+}
+}
+</style>
+    
+    <script src="/assets/js/teste.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </body>
+    </html>

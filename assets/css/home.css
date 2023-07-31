@@ -5,6 +5,9 @@
 body
 {
     background-color: #000 !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container
@@ -12,7 +15,30 @@ body
     max-width: auto !important;
 }
 
+.tawk-card
+{
+    display: none !important    ;
+}
+.p-3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-title
+{
+    color: #2e2e2e !important;
+}
 
+.modal-header .close
+{
+    color: #2e2e2e !important;
+}
+
+.form-control
+{
+    color: #2e2e2e !important;
+}
 
 *
 {
@@ -28,9 +54,9 @@ header
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 6rem;
+    justify-content: center !important;
+    align-items: center !important;
+    
 }
 
 li 
@@ -91,6 +117,7 @@ li
     flex-direction: column;
     position: relative;
     width: 100%;
+    
 }
 
 .txt-index1
@@ -130,6 +157,20 @@ li
 
 }
 
+.btn-primary
+
+{
+    background-color: #00CB12 !important;
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 2px 2px 5px #000;
+  
+  
+}
+.btn-primary.focus, .btn-primary:focus
+{
+    box-shadow: 0 0 0 0.2rem rgba(38, 255, 67, 0.5) !important;
+}
 ul
 {
     padding: 0 !important;
@@ -152,7 +193,10 @@ ul
     z-index: 19;
 }
 
-
+.index5
+{
+    text-align: center;
+}
 
 .index1 h1
 
@@ -192,34 +236,59 @@ ul
     font-weight: 600;
 }
 
+.drop-menu
+{
+    display: none;
+    font-size: 1.5rem;
+}
+
+.dropdown-item
+
+{
+    color: #000 !important;
+    border-radius: 12px !important;
+}
+
+.dropdown-item.active, .dropdown-item:active
+{
+    background-color: transparent !important;
+}
+
+
 .logo
 {
     height: 2.7rem;
 }
 .nav1
 {
-    background: linear-gradient(to right, #110b61, #10dbe2) ;
+    background: linear-gradient(to right, #110b61, #01597c) ;
     width: 100%;
-    display: none;
+  
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     text-transform: uppercase;
     font-weight: 600;
-    height: 3.5rem;
+    height: 3.5rem !important;
     font-size: .9rem;
    
 
 }
 
-.nav1 ul
+.nav1 .ul1
 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+    z-index: 9999;
     margin: 0 !important;
     
+}
+
+.ul1.is-active
+{
+    display: inline !important;
 }
 .nav1 ul li 
 {
@@ -410,8 +479,55 @@ span.accordion-title
     font-weight: 300;
     margin: 2em 0;
   }
-  
-  
+
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+
+
+  .dropdown-menu.is-active
+  {
+    display: block !important;
+  }
+  .navbar{
+    width: 100%;
+    justify-content: center !important;
+    text-align: center;
+    background-color: #000 !important;
+    display: flex;  
+  }
+  .collapse
+  {
+    justify-content: center;
+  }
+
+  .teste, .contrate
+{
+    /* Adicione essa propriedade para garantir que o botão comece de uma posição abaixo do seu local original */
+
+    transition: .6s ease;
+}
+
+
+.teste:hover, .contrate:hover
+{
+
+    animation: btn-animation .6s forwards;
+    transition: .6s ease;
+    animation-delay: 10ms;
+}
+
+@keyframes btn-animation {
+    0% {
+        transform: translateY(10px); /* Inicialmente, o botão estará 10px abaixo do local original */
+    }
+    100% {
+        transform: translateY(-10px); /* Finalmente, o botão voltará para o local original */
+    }
+}   
+
   .index5
   {
     display: flex;
@@ -421,14 +537,20 @@ span.accordion-title
     padding: 3rem 0 5rem;
   }
   
-
+.collapse.is-active
+{
+    display: flex !important;
+}
 
 
 @media (max-width:63rem)
 
 {
 
-
+    .drop-menu
+    {
+        display: block !important;
+    }
  h1
 {
     font-size: 2rem !important;
@@ -463,8 +585,12 @@ span.accordion-title
 }
 
 
-    .nav1 ul
-{display: none !important;}
+    .ul1
+{display: none !important;
+border-radius: 12px;
+background: linear-gradient(to right, #0a1cbd, #01597c);
+height: 100%;}
+
 
 .teste
 {
