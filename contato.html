@@ -25,6 +25,11 @@
                     <li class="nav-item active">
                       <a class="nav-link" href="index.html">INÍCIO <span class="sr-only">(current)</span></a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="loja.html">LOJA</a>
+                      </li>      
+
                     <li class="nav-item">
                       <a class="nav-link" href="teste.html">TESTE</a>
                     </li>
@@ -56,21 +61,25 @@
               </nav>
           </header>
     <div class="index5 container">
-        <form  action="https://formspree.io/f/moqojdye"
-        method="POST">
+        <form action="https://formspree.io/f/moqojdye" method="POST">
             <div class="mb-3">
                 <label for="exampleInputName1" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                <input type="text" class="form-control" id="exampleInputName1" name="name" aria-describedby="nameHelp">
                 <div id="nameHelp" class="form-text">Nós nunca vamos compartilhar seu nome com ninguém.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">Nós nunca vamos compartilhar seu e-mail com ninguém.</div>
             </div>
             <div class="mb-3">
+                <label for="exampleInputPhone1" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="exampleInputPhone1" name="phone" aria-describedby="phoneHelp">
+                <div id="phoneHelp" class="form-text">Nós nunca vamos compartilhar seu telefone com ninguém.</div>
+            </div>
+            <div class="mb-3">
                 <label for="exampleTextarea1" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="exampleTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleTextarea1" name="message" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
@@ -150,19 +159,7 @@ outline: none;
 button:active, a:active {
 outline: none;
 }
-.index6 
-{
 
-
-height: 15rem;
-background: linear-gradient(to right, #00000096,#00000080), url('/assets/image/john-wick-chapter-2-2017-artwork-poster-ap.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: top;
-padding: 3rem 0;
-text-align: center !important;
-
-}
 
 
 

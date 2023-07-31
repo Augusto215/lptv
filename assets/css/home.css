@@ -39,6 +39,7 @@ body
 .app-img 
 {
     height: 8rem;
+    width: 8rem;
     border-radius: 12px;
     
 
@@ -48,8 +49,9 @@ body
 
 {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-between;
+    width: 70%;
+
    
     align-items: center;
 }
@@ -59,8 +61,18 @@ body
     display: flex;
     flex-direction: column;
     height:100%;
-    justify-content: space-evenly;
+    text-align: center;
+    justify-content: right;
+    align-items: flex-end;
 }   
+
+.nome-app h2
+
+{
+   max-width: 55%;
+   word-break: break-word;
+   text-align: right;
+}
 
 .btn-app
 {
@@ -608,6 +620,21 @@ span.accordion-title
     font-size: 1.5rem !important;
 }
 
+
+.nome-app
+{
+  
+    justify-content:center !important;
+    align-items: center !important;
+}   
+
+.nome-app h2
+
+{
+   max-width: auto !important;
+  
+   text-align: center !important;
+}
 
 
 
