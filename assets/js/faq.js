@@ -1,6 +1,4 @@
 
-    
-
 // Selecionando todos os botões
 const items = document.querySelectorAll('.accordion button');
 

@@ -15,6 +15,16 @@ body
     max-width: auto !important;
 }
 
+.index5-5
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
 .tawk-card
 {
     display: none !important    ;
@@ -24,6 +34,42 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.app-img 
+{
+    height: 8rem;
+    border-radius: 12px;
+    
+
+}
+
+.flex-app
+
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+   
+    align-items: center;
+}
+
+.nome-app
+{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: space-evenly;
+}   
+
+.btn-app
+{
+    border-radius: 20px;
+    background-color: #2e2e2e;
+    outline: none;
+    border: none;
+    box-shadow: #00f8c2 2px 2px;
+    padding: .7rem 2rem;
 }
 .modal-title
 {
@@ -587,7 +633,7 @@ span.accordion-title
 
     .ul1
 {display: none !important;
-border-radius: 12px;
+border-radius: 12px;    
 background: linear-gradient(to right, #0a1cbd, #01597c);
 height: 100%;}
 
@@ -599,6 +645,16 @@ height: 100%;}
 .grid-buttons
 {
     grid-template-columns: 1fr;
+}
+
+.flex-app
+{
+    flex-direction: column;
+}
+
+.nome-app
+{
+    margin-top: 1rem;
 }
 
 
